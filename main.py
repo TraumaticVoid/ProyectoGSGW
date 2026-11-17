@@ -82,7 +82,7 @@ REDDIT_SUBS = [
     "DroppedInAGhostStory"
 ]
 
-CANAL_FEEDS_ID = 1559982406696574976 
+CANAL_FEEDS_ID = 1560154902552903751
 
 ultimos_ids_twitter = {}
 ultimos_ids_reddit = {}
@@ -165,7 +165,7 @@ async def on_message(message):
         async with message.channel.typing():
             try:
                 respuesta = cliente_ia.models.generate_content(
-                    model='gemini-2.5-flash',
+                    model='gemini-3.5-flash-lite',
                     contents=message.content,
                     config=types.GenerateContentConfig(
                         system_instruction=personalidad,

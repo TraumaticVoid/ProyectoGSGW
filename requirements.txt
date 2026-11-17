@@ -1,0 +1,5 @@
+discord.py
+aiohttp
+feedparser
+google-genai
+python-dotenv
